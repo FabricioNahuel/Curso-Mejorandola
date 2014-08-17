@@ -1,0 +1,125 @@
+<!DOCTOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+    <title>My Game3</title>
+      <link href="css/css.min.css" rel="stylesheet">
+      <link href="css/docs.min.css" rel="stylesheet">
+      <link href="css/myCss.css" rel="stylesheet">
+</head>
+
+<body>
+<form name="formulario1">
+
+<div class="container bs-docs-container">
+  <div class="row">
+    <div class="col-md-12" role="main">
+      <div class="bs-docs-section">
+
+        <div class="row show-grid">
+  				<div class="col-sm-12">
+      			<center><b>Elija una de las siguientes opciones:</b></center>
+      				
+      				<div class="row show-grid">
+        				<div class="col-xs-12 col-sm-12">
+        		      <center>
+                    <div class="box1" id="caja">
+          		      	<img class="opciones1" src="img/opciones_user/Piedra.png" width="35px" height="35px" style="cursor:pointer;" id="0"     onclick="opcionU(0)">
+          		      	<img class="opciones2" src="img/opciones_user/Papel.png" width="35px" height="35px" style="cursor:pointer;" id="1"     onclick="opcionU(1)">
+                			<img class="opciones3" src="img/opciones_user/Tijera.png" width="35px" height="35px" style="cursor:pointer;" id="2"     onclick="opcionU(2)">
+                			<img class="opciones4" src="img/opciones_user/Lagarto.png" width="35px" height="35px" style="cursor:pointer;" id="3"     onclick="opcionU(3)">
+                			<img class="opciones5" src="img/opciones_user/Spock.png" width="35px" height="35px" style="cursor:pointer;" id="4"     onclick="opcionU(4)">
+          		      </div>
+                  </center>
+
+                   
+                        <div class="alineacion_boton"> 
+                          <buttom class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            Reglas del Juego
+                          </buttom>
+                        </div>
+
+                        <div id="myModal" class="modal fade">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                      <h4 class="modal-title">Reglas del Juego</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                      <center><img src="img/reglasdeljuego.jpg" width="570px" height:"600px"></center>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="contacto"><a href="https://cursos.mejorando.la/usuarios/FabricioNahue/" class="hipervinculo">Fabricio Nahuel - Mejorando.la</a></div>
+
+        				</div>
+      				</div>
+
+ 		 		      <div class="bs-docs-grid">
+     			      <div class="col-xs-12 col-sm-12">
+
+     			        <div class="vida_user">
+       			        <div class="progress">
+                        <div id="vidaUsuario">      
+                          <span class="sr-only"></span>
+                        </div>
+					          </div>
+					        </div>
+
+          				<div class="vida_maquina">
+               			<div class="progress">
+          						<div id="vidaRival">
+           					   	<span class="sr-only"></span>
+                      </div>
+        					  </div>
+        					</div>
+
+        					<div class="box2">
+        					   <hr class="barra_vertical">
+               			   	  <div class="imagen">
+                               <img class="usuario" src="img/signo.png" id="usuario">
+                               <img class="versus" src="img/vs9.png">
+                               <img class="maquina" src="img/signo.png" id="rival">
+                          </div>
+                      <hr class="barra_vertical">
+                  </div>
+
+                <center>
+                  <input class="contador1" type="text" name="vic" value=" 0" readonly>
+                  <input class="contador2" type="text" name="emp" value=" 0" readonly>
+                  <input class="contador3" type="text" name="der" value=" 0" readonly>
+
+                    <br />
+
+                  <font class="fuente1"><b>Victorias</b></font>
+                  <font class"fuente2"><b>Empates</b></font>
+                  <font class="fuente3"><b>Derrotas</b></font>
+                </center>
+
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+  			      </div>
+          </div>
+ 		 	  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/myJquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-modal.js"></script>
+<script src="js/jquery-transition.js"></script>
+
+</form>
+</body>
+</html>
